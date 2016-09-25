@@ -46,6 +46,15 @@ To automatically fix many of the styling issues, use
 rubocop -a
 ```
 
+To see the real issue "in action", make sure you have both Xcode 8 and Xcode 7.3.1 installed in `/Applications`.
+Specify the name of Xcode 8 and Xcode 7.3.1 apps without the `.app` extension using `prev_xcode` and `next_xcode` options and run `switch_xcode_test` lane.
+
+```shell
+# In this example Xcode 8 is installed to /Applications/Xcode.app
+# Xcode 7.3.1 is installed to /Applications/Xcode7.3.1.app
+bundle exec fastlane switch_xcode_test prev_xcode:Xcode next_xcode:Xcode7.3.1
+```
+
 ## Issues and Feedback
 
 For any other issues and feedback about this plugin, please submit it to this repository.

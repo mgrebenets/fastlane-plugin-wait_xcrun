@@ -1,3 +1,21 @@
 lane :test do
   wait_xcrun
 end
+
+# Test that switching from one Xcode version to another works
+lane :switch_xcode_test do |options|
+  prev_xcode = options[:prev_xcode] || "Xcode"
+  nex_xcode = options[:nex_xcode] || "Xcode7.3.1"
+
+  # Kill then run simulator using Xcode 8
+  `killall -9 Simulator`
+  ENV["DEVELOPER_DIR"] = "/Applications/#{prev_xcode}.app/Contents/Developer/"
+  `osascript -e 'open app "Simulator"'`
+  sleep(5)  # Give simulator enough time to start
+  # Now kill the simulator (mimics most of the CI setup where simulators are killed at the beginning of the build)
+  `killall -9 Simulator`
+
+  # Switch to Xcode 7.3.1 and wait to Xcode toolchain to be back online
+  ENV["DEVELOPER_DIR"] = "/Applications/#{nex_xcode}.app/Contents/Developer/"
+  wait_xcrun
+end
