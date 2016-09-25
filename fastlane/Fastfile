@@ -1,0 +1,3 @@
+lane :test do
+  wait_xcrun
+end
