@@ -7,12 +7,13 @@ module Fastlane
         retry_count = 0
         loop do
           system("xcrun simctl help 2>/dev/null 1>/dev/null")
-          break if $?.exitstatus == 0 || retry_count >= 10
+          break if $?.success? || retry_count >= 10
+          UI.important("Xcode toochain is not ready yet. Retrying ...")
           sleep(1) # Take a short break
           retry_count += 1
         end
 
-        $?.exitstatus == 0 ? UI.success("Xcode is back online!") : UI.user_error("Xcode toolchain is offline.")
+        $?.success? ? UI.success("Xcode toolchain is back online!") : UI.user_error("Xcode toolchain is offline.")
       end
 
       def self.description
