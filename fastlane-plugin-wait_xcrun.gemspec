@@ -7,10 +7,10 @@ Gem::Specification.new do |spec|
   spec.name          = 'fastlane-plugin-wait_xcrun'
   spec.version       = Fastlane::WaitXcrun::VERSION
   spec.author        = %q{Maksym Grebenets}
-  spec.email         = %q{maksym.grebenets@cba.com.au}
+  spec.email         = %q{mgrebenets@gmail.com}
 
   spec.summary       = %q{Wait for Xcode toolchain to come back online after switching Xcode versions.}
-  # spec.homepage      = "https://github.com/<GITHUB_USERNAME>/fastlane-plugin-wait_xcrun"
+  spec.homepage      = "https://github.com/mgrebenets/fastlane-plugin-wait_xcrun"
   spec.license       = "MIT"
 
   spec.files         = Dir["lib/**/*"] + %w(README.md LICENSE)
