@@ -11,7 +11,7 @@ lane :switch_xcode_test do |options|
   `killall -9 Simulator`
   ENV["DEVELOPER_DIR"] = "/Applications/#{prev_xcode}.app/Contents/Developer/"
   `osascript -e 'open app "Simulator"'`
-  sleep(5)  # Give simulator enough time to start
+  sleep(5) # Give simulator enough time to start
   # Now kill the simulator (mimics most of the CI setup where simulators are killed at the beginning of the build)
   `killall -9 Simulator`
 
