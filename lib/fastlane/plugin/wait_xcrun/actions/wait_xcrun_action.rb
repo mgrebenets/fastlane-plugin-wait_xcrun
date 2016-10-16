@@ -13,7 +13,7 @@ module Fastlane
           retry_count += 1
         end
 
-        $?.success? ? UI.success("Xcode toolchain is back online!") : UI.user_error("Xcode toolchain is offline.")
+        $?.success? ? UI.success("Xcode toolchain is back online!") : UI.user_error!("Xcode toolchain is offline.")
       end
 
       def self.description
