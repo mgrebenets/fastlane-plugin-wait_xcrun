@@ -5,8 +5,9 @@
 version: 2
 jobs:
   build:
-    macos:
-      xcode: "10.1"
+    docker:
+      # specify the version you desire here
+      - image: circleci/ruby:2.4.2
 
     working_directory: ~/repo
 
