@@ -2,11 +2,17 @@ module Fastlane
   module Actions
     class WaitXcrunAction < Action
       def self.run(params)
+        xcrun_cmd = "xcrun"
+        unless system("command -v #{xcrun_cmd}")
+          UI.important("#{xcrun_cmd} command does not exist")
+          return
+        end
+
         UI.message "Waiting for Xcode toolchain ..."
         # Try running 'xcrun simctl help' subcommand until exit status is 0 or max number or retries is exceeded
         retry_count = 0
         loop do
-          system("xcrun simctl help 2>/dev/null 1>/dev/null")
+          system("#{xcrun_cmd} simctl help 2>/dev/null 1>/dev/null")
           break if $?.success? || retry_count >= 10
 
           UI.important("Xcode toochain is not ready yet. Retrying ...")
