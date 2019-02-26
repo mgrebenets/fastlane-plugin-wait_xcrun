@@ -8,6 +8,7 @@ module Fastlane
         loop do
           system("xcrun simctl help 2>/dev/null 1>/dev/null")
           break if $?.success? || retry_count >= 10
+
           UI.important("Xcode toochain is not ready yet. Retrying ...")
           sleep(1) # Take a short break
           retry_count += 1
