@@ -12,7 +12,7 @@ Lint/UselessAssignment:
     - '**/spec/**/*'
 
 # We could potentially enable the 2 below:
-Layout/IndentHash:
+Layout/IndentFirstHashElement:
   Enabled: false
 
 Layout/AlignHash:
@@ -24,6 +24,9 @@ Layout/DotPosition:
 
 # We allow !! as it's an easy way to convert ot boolean
 Style/DoubleNegation:
+  Enabled: false
+
+Style/FrozenStringLiteralComment:
   Enabled: false
 
 # Sometimes we allow a rescue block that doesn't contain code
