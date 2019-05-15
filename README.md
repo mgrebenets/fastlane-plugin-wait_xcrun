@@ -3,7 +3,7 @@
 [![fastlane Plugin Badge](https://rawcdn.githack.com/fastlane/fastlane/master/fastlane/assets/plugin-badge.svg)](https://rubygems.org/gems/fastlane-plugin-wait_xcrun)
 [![version](https://badge.fury.io/gh/mgrebenets%2Ffastlane-plugin-wait_xcrun.svg)](https://badge.fury.io/gh/mgrebenets%2Ffastlane-plugin-wait_xcrun)
 [![CircleCI](https://circleci.com/gh/mgrebenets/fastlane-plugin-wait_xcrun.svg?style=svg)](https://circleci.com/gh/mgrebenets/fastlane-plugin-wait_xcrun)
-[![Travis CI](https://travis-ci.org/mgrebenets/fastlane-plugin-wait_xcrun.svg?branch=master)](https://travis-ci.org/mgrebenets/fastlane-plugin-wait_xcrun)
+[![Travis CI](https://img.shields.ios/travis/mgrebenets/fastlane-plugin-wait_xcrun.svg?label=Travis+CI)](https://travis-ci.org/mgrebenets/fastlane-plugin-wait_xcrun)
 
 ## Getting Started
 
