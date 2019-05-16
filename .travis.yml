@@ -2,5 +2,3 @@ os: osx # enable this if you need macOS support
 language: ruby
 rvm:
   - 2.5.4
-after_script:
-  - bundle exec rake coveralls:push
