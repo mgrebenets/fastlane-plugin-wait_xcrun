@@ -32,6 +32,7 @@ jobs:
 
       # run tests!
       - run:
+          context: api-tokens
           name: run tests
           command: bundle exec rake
 
