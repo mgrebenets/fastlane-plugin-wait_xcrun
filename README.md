@@ -6,7 +6,6 @@
 [![Travis CI](https://img.shields.io/travis/mgrebenets/fastlane-plugin-wait_xcrun.svg?label=%20&logo=travis)](https://travis-ci.org/mgrebenets/fastlane-plugin-wait_xcrun)
 [![Coveralls](https://img.shields.io/coveralls/github/mgrebenets/fastlane-plugin-wait_xcrun.svg?label=coverage)](https://travis-ci.org/mgrebenets/fastlane-plugin-wait_xcrun)
 
-
 ## Getting Started
 
 This project is a [fastlane](https://github.com/fastlane/fastlane) plugin. To get started with `fastlane-plugin-wait_xcrun`, add it to your project by running:
@@ -42,12 +41,13 @@ end
 
 To run both the tests, and code style validation, run
 
-```
+```shell
 rake
 ```
 
 To automatically fix many of the styling issues, use
-```
+
+```shell
 rubocop -a
 ```
 
