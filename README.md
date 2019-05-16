@@ -4,6 +4,8 @@
 [![version](https://img.shields.io/github/tag/mgrebenets/fastlane-plugin-wait_xcrun.svg?color=green&label=version)](https://badge.fury.io/gh/mgrebenets%2Ffastlane-plugin-wait_xcrun)
 [![CircleCI](https://circleci.com/gh/mgrebenets/fastlane-plugin-wait_xcrun.svg?style=svg)](https://circleci.com/gh/mgrebenets/fastlane-plugin-wait_xcrun)
 [![Travis CI](https://img.shields.io/travis/mgrebenets/fastlane-plugin-wait_xcrun.svg?label=%20&logo=travis)](https://travis-ci.org/mgrebenets/fastlane-plugin-wait_xcrun)
+[![Coveralls](https://img.shields.io/coveralls/github/mgrebenets/fastlane-plugin-wait_xcrun.svg?label=coverage)](https://travis-ci.org/mgrebenets/fastlane-plugin-wait_xcrun)
+
 
 ## Getting Started
 
