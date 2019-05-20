@@ -1,10 +1,12 @@
 # wait_xcrun plugin
 
+[![license](https://img.shields.io/github/license/mgrebenets/fastlane-plugin-wait_xcrun.svg)](https://github.com/mgrebenets/fastlane-plugin-wait_xcrun)
 [![fastlane Plugin Badge](https://rawcdn.githack.com/fastlane/fastlane/master/fastlane/assets/plugin-badge.svg)](https://rubygems.org/gems/fastlane-plugin-wait_xcrun)
 [![version](https://img.shields.io/github/tag/mgrebenets/fastlane-plugin-wait_xcrun.svg?color=green&label=version)](https://github.com/mgrebenets/fastlane-plugin-wait_xcrun)
 [![CircleCI](https://circleci.com/gh/mgrebenets/fastlane-plugin-wait_xcrun.svg?style=svg)](https://circleci.com/gh/mgrebenets/fastlane-plugin-wait_xcrun)
 [![Travis CI](https://img.shields.io/travis/mgrebenets/fastlane-plugin-wait_xcrun.svg?label=%20&logo=travis)](https://travis-ci.org/mgrebenets/fastlane-plugin-wait_xcrun)
 [![Coverage Status](https://coveralls.io/repos/github/mgrebenets/fastlane-plugin-wait_xcrun/badge.svg)](https://coveralls.io/github/mgrebenets/fastlane-plugin-wait_xcrun)
+[![Inline docs](http://inch-ci.org/github/mgrebenets/fastlane-plugin-wait_xcrun.svg)](http://inch-ci.org/github/mgrebenets/fastlane-plugin-wait_xcrun)
 
 ## Getting Started
 

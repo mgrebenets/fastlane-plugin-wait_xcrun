@@ -1,6 +1,7 @@
 require 'fastlane/plugin/wait_xcrun/version'
 
 module Fastlane
+  # Helper module for plugin actions.
   module WaitXcrun
     # Return all .rb files inside the "actions" and "helper" directory
     def self.all_classes
